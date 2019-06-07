@@ -1,0 +1,18 @@
+
+{% load static %}
+<head>
+    <title>wordcount-page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu|Gamja+Flower&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>About</h1>
+        <hr>
+        <p>안녕하세요, 이곳은 각 단어의 갯수를 세주는 페이지 입니다!</p>
+
+        <a href="{% url 'home' %}">홈으로 돌아가기</a>
+
+    </div>
+</body>

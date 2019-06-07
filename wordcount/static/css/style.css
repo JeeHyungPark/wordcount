@@ -1,0 +1,39 @@
+
+.container{
+    text-align:center;
+    width:960px;
+    margin: 0 auto;
+}
+
+
+
+h1{
+    font-family: 'Gaegu', cursive;
+    color: lightcoral;
+}
+
+h2{
+    font-family: 'Gamja Flower', cursive;
+}
+
+table{
+    border: 1px solid #444444;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table tr, td{
+    border: 1px solid #444444;
+    width: 200px;
+    text-align: center;
+    
+}
+
+.menu{
+    background-color: #ffcd28
+}
+
+a{
+    font-family: 'Gamja Flower', cursive;
+}

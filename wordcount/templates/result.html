@@ -1,0 +1,46 @@
+
+{% load static %}
+<head>
+    <title>wordcount-detail</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu|Gamja+Flower&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+
+        <h1>당신이 입력한 텍스트는 {{total}}개의 단어로 구성되어 있습니다.</h1>
+        <br>
+        <hr>
+        <br><br>
+        <table>
+            <tr>
+                <td class="menu">
+                    <h2>입력한 텍스트 </h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{full}}
+                </td>
+            </tr>
+            <tr>  
+                <td class="menu">
+                    <h2> 단어 카운트</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {% for word, howmany in dictionary %}
+                    {{word}} : {{howmany}}번
+                    <br>
+                    {% endfor %}
+                </td>
+            </tr>
+        </table>
+        <br>
+        <a href="{% url 'home' %}">다시 하기</a>
+        
+        
+    </div>
+</body>
